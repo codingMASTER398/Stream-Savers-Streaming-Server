@@ -1,0 +1,17 @@
+{
+  "name": "stream-savers-streaming-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "coding398 and Criz",
+  "license": "MIT",
+  "dependencies": {
+    "@replit/database": "^2.0.1",
+    "express": "^4.17.3",
+    "nanoid": "^3.3.2"
+  }
+}
