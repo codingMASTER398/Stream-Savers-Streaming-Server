@@ -204,7 +204,7 @@ function start(key){
             db.delete(key);
             runCommand(
               'ffmpeg',
-              `-re -i https://cdn.discordapp.com/attachments/964775926829285386/965176281899597894/End_stream.mp4 -maxrate 2500k -c copy -f flv rtmp://a.rtmp.youtube.com/live2/${key}`,
+              `-re -i https://cdn.discordapp.com/attachments/966225601616810014/966597033660141629/End_stream.mp4 -maxrate 2500k -c copy -f flv rtmp://a.rtmp.youtube.com/live2/${key}`,
               () => {},
               () => {}
             )
@@ -272,7 +272,7 @@ function start(key){
               }
             )
           }
-          next()
+          ad()
         }
       }
     )
@@ -284,22 +284,3 @@ db.list().then(keys => {
     start(keys[i])
   }
 });
-    
-/*const runCommand = require('./runCommand')
-
-function go(){
-  runCommand(
-    'ffmpeg',
-    `-re -i ./video2.mp4 -c copy -f flv rtmp://a.rtmp.youtube.com/live2/wqtfrewwfwer`,
-    (data) => {
-      console.log(data)
-    },
-    () => {
-      console.log('fin')
-    }
-  ) 
-}
-
-for(let i=0; i<1; i++){
-  go()
-}*/
